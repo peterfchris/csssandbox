@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fonts</title>
+  <style>
+    body {
+      /* stacks fonts. use sans serif as default. use web safe families (google fonts) */
+      font-family: 'Roboto', sans-serif;
+      font-size: 18px;
+      line-height: 1.6em;
+      /* 
+      px - most common absolute element
+      % - to parent element
+      em - to font-size of parent element
+      rem - to font size of root element
+      vw - to 1% of viewport width
+      vh - to 1% of viewport height      
+      */
+    }
+
+    #welcome p span {
+      /* p is unnecessary, but keeps it more organized */
+      font-weight: bold;
+    }
+
+    #about p span {
+      font-style: italic;
+    }
+
+  </style>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Illum dolorum ut <span> accusamus recusandae nostrum eius non 
+      ipsum </span>alias assumenda error?</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Odio voluptatum <span> rerum ab nesciunt iusto id non quia 
+      sed</span> reiciendis doloribus?</p>
+  </div>
+</body>
+</html>
