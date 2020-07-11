@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inline, Block, & Inline-Block</title>
+  <style>
+    li {
+      display: inline;
+    }
+
+    li a {
+      padding-right: 10px;
+    }
+
+    /* cannot do margin: auto; on inline element */
+    img {
+      display: block;
+      margin: auto;
+    }
+
+    .box {
+      width: 32%;
+      /* cannot use width on inline. This is where inline-block comes in handy. Also, know which elements are block v inline */
+      display: inline-block;
+      box-sizing: border-box;
+      background: #f4f4f4;
+      padding: 20px;
+      margin-bottom: 15px;
+    }
+
+  </style>
+</head>
+<body>
+  <ul>
+    <li><a href="#">Technology</a></li>
+    <li><a href="#">Business</a></li>
+    <li><a href="#">Fashion</a></li>
+  </ul>
+
+  <br>
+  <br>
+
+  <img src="./css/leaf.png" alt="leaf-img">
+
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Temporibus quidem aspernatur totam assumenda earum accusantium 
+      fugit natus harum repellendus rerum.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Temporibus quidem aspernatur totam assumenda earum accusantium 
+      fugit natus harum repellendus rerum.</p>
+  </div>
+  <div class="box">
+    <h3>Heading</h3>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. 
+      Temporibus quidem aspernatur totam assumenda earum accusantium 
+      fugit natus harum repellendus rerum.</p>
+  </div>
+</body>
+</html>
