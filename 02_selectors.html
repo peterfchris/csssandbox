@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Selectors</title>
+  <style>
+    /* element selectors */
+    body {
+      background-color: #333;
+    }
+
+    /* Is for IDs */
+    #welcome {
+      background-color: white;
+    }
+ 
+    /* Is for classes */
+    .primary-heading {
+      color: blue;
+    }
+    /* multiple selectors */
+    /* the comma means all of everything lists */
+    #welcome, #about {
+      border: 1px solid #ccc;
+      padding: 10px;
+      margin-bottom: 5px;
+    }
+
+    /* Nested selectors */
+    /* The lack of the comma means only p tags within #welcome about will be effected */
+    #welcome p {
+      font-size: 20px;
+    }
+
+    #about {
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <div id="welcome">
+    <h2 class="primary-heading">Welcome</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Illum dolorum ut accusamus recusandae nostrum eius non 
+      ipsum alias assumenda error?</p>
+  </div>
+  <div id="about">
+    <h2>About</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+      Odio voluptatum rerum ab nesciunt iusto id non quia 
+      sed reiciendis doloribus?</p>
+  </div>
+</body>
+</html>
